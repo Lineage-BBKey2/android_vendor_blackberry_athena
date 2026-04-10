@@ -9,9 +9,8 @@ on post-fs-data
 
 service gx_fpd /vendor/bin/gx_fpd
     class late_start
-#    seclabel u:r:gx_fpd:s0
     user system
     group system
-#	disable
-#on property:persist.sys.fptype=1
-#	start gx_fpd
+
+on property:sys.boot_completed=1
+    start gx_fpd

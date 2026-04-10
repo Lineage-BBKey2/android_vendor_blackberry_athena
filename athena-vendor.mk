@@ -1,10 +1,8 @@
 #
 # Automatically generated file. DO NOT MODIFY
 #
-
 PRODUCT_SOONG_NAMESPACES += \
     vendor/blackberry/athena
-
 PRODUCT_COPY_FILES += \
     vendor/blackberry/athena/proprietary/vendor/etc/acdbdata/MTP/sdm660-snd-card-bbf100/bb_Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/sdm660-snd-card-bbf100/bb_Bluetooth_cal.acdb \
     vendor/blackberry/athena/proprietary/vendor/etc/acdbdata/MTP/sdm660-snd-card-bbf100/bb_General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/sdm660-snd-card-bbf100/bb_General_cal.acdb \
@@ -108,7 +106,6 @@ PRODUCT_COPY_FILES += \
     vendor/blackberry/athena/proprietary/vendor/firmware/synaptics/Athena_01/63022.img:$(TARGET_COPY_OUT_VENDOR)/firmware/synaptics/Athena_01/63022.img \
     vendor/blackberry/athena/proprietary/vendor/firmware/synaptics/athena_tp.img:$(TARGET_COPY_OUT_VENDOR)/firmware/synaptics/athena_tp.img \
     vendor/blackberry/athena/proprietary/vendor/firmware/tfa98xx.cnt:$(TARGET_COPY_OUT_VENDOR)/firmware/tfa98xx.cnt
-
 PRODUCT_PACKAGES += \
     libFlacSwDec \
     libacdb-fts \
@@ -159,15 +156,11 @@ PRODUCT_PACKAGES += \
     libeffectproxy \
     libldnhncr \
     libqcbassboost \
-    libqcompostprocbundle \
-    libqcomvisualizer \
-    libqcomvoiceprocessing \
     libqcvirt \
     libreverbwrapper \
     libvisualizer \
-    libvolumelistener \
     vendor.qti.hardware.dsp@1.0 \
-    camera.sdm660 \
+    vendor.qti.hardware.camera.device@1.0_vendor \
     libVDSuperPhotoAPI \
     libactuator_ad5816g \
     libactuator_ad5823 \
@@ -1754,7 +1747,6 @@ PRODUCT_PACKAGES += \
     libdrc \
     libedge_smooth_hvx_stub \
     libflash_pmic \
-    libhal_dbg \
     libjpegdhw \
     libjpegdmahw \
     libjpegehw \
@@ -1803,7 +1795,6 @@ PRODUCT_PACKAGES += \
     libmmcamera_imx362_gt24c64a \
     libmmcamera_imx376 \
     libmmcamera_imx378 \
-    libmmcamera_interface \
     libmmcamera_irs1645 \
     libmmcamera_isp_abf48 \
     libmmcamera_isp_aec_bg_stats47 \
@@ -1941,8 +1932,6 @@ PRODUCT_PACKAGES += \
     libmmcamera_tuning \
     libmmcamera_tuning_lookup \
     libmmjpeg \
-    libmmjpeg_interface \
-    libmmlib2d_interface \
     libmmqjpeg_codec \
     libmmqjpegdma \
     libmpbase \
